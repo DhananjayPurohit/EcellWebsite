@@ -10,3 +10,36 @@ Open http://localhost:3000 to view it in the browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
+
+Directory structure ./src
+components
+│   ├───Footers
+│   │       FooterAboutUs.js
+│   │
+│   ├───Gifloader
+│   │       Gifloader.js
+│   │
+│   ├───Navbars
+│   │       ColorNavbar.js
+│   │       DangerNavbar.js
+│   │
+│   └───Timeline
+│           Timeline.js
+│
+└───views
+    │   Presentation.js
+    │
+    ├───examples
+    │       BlogPosts.js
+    │       Discover.js
+    │       Faculty.js
+    │       Gallery.js
+    │       Student.js
+    │
+    ├───presentation-sections
+    │       SectionContactUs.js
+    │       SectionIcons.js
+    │       SectionTestimonials.js
+    │
+    └───sections-sections
+            SectionHeader.js
