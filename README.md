@@ -13,7 +13,8 @@ You will also see any lint errors in the console.
 
 Directory structure ./src
 ```bash
-components
+│
+├───components
 │   ├───Footers
 │   │       FooterAboutUs.js
 │   │
@@ -44,4 +45,3 @@ components
     │
     └───sections-sections
             SectionHeader.js
-    ```
