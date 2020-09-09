@@ -12,6 +12,7 @@ The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 Directory structure ./src
+```bash
 components
 │   ├───Footers
 │   │       FooterAboutUs.js
@@ -43,3 +44,4 @@ components
     │
     └───sections-sections
             SectionHeader.js
+    ```
