@@ -16,6 +16,7 @@ import {
 // core components
 import DangerNavbar from "components/Navbars/DangerNavbar.js";
 import FooterAboutUs from "components/Footers/FooterAboutUs.js";
+import ReactMd from 'react-md-file';
 
 function BlogPosts() {
   document.documentElement.classList.remove("nav-open");
@@ -405,6 +406,7 @@ function BlogPosts() {
                   </Col>
                 </Row>
               </div>
+              <ReactMd markdown="# hello world" />
               <hr />
               <br />
               <br />
