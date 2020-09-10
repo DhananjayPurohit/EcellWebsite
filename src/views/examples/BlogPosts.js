@@ -159,6 +159,257 @@ function BlogPosts() {
               <hr />
               <br />
               <br />
+               <div className="article">
+                <Row>
+                  <Col className="ml-auto mr-auto" md="8">
+                    <Card className="card-blog card-plain text-center">
+                      <div className="card-image">
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img
+                            alt="..."
+                            className="img img-raised"
+                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                          />
+                        </a>
+                      </div>
+                      <CardBody>
+                        <div className="card-category">
+                          <Badge className="main-tag" color="info">
+                            Popular
+                          </Badge>
+                        </div>
+                        <a href="javascrip: void(0);">
+                          <CardTitle tag="h3">
+                            Freshmen entrepreneurship orientation program 
+                          </CardTitle>
+                          <h6 className="title-uppercase">October 1, 2018</h6>
+                        </a>
+                        <div className="card-description">
+                          <p>
+                            A one-day workshop on “Freshman Orientation program” was organized by Entrepreneurship Cell, IET-DAVV on 01-10-2018. On this occasion, a young entrepreneur, Mr. Sidharth Rajhans, Founder Director, Spacify Inc. delivered an expert lecture on ‘Entrepreneurship: from Ideation to Execution’. He addressed students about various aspects of start-ups, entrepreneurship and government schemes.
+                          </p>
+                        </div>
+                      </CardBody>
+                      <Button className="btn-round" color="danger" size="sm">
+                        Read more
+                      </Button>
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+              <hr />
+              <br />
+              <br />
+
+              <div className="article">
+                <Row>
+                  <Col className="ml-auto mr-auto" md="8">
+                    <Card className="card-blog card-plain text-center">
+                      <div className="card-image">
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img
+                            alt="..."
+                            className="img img-raised"
+                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                          />
+                        </a>
+                      </div>
+                      <CardBody>
+                        <div className="card-category">
+                          <Badge className="main-tag" color="info">
+                            Popular
+                          </Badge>
+                        </div>
+                        <a href="javascrip: void(0);">
+                          <CardTitle tag="h3">
+                            A session on the life of an entrepreneur
+                          </CardTitle>
+                          <h6 className="title-uppercase">October 23, 2018</h6>
+                        </a>
+                        <div className="card-description">
+                          <p>
+                           A one-day session was organised by the E-Cell to give a broader knowledge on choosing and pursuing entrepreneurship as the career for the students. On this occasion the Co- founders of “Little Help”, Mr. Govind Choudhary and Mr. Prakhar Londhe, were invited as the speakers to share their life journeys and life lessons to the students. 
+                          </p>
+                        </div>
+                      </CardBody>
+                      <Button className="btn-round" color="danger" size="sm">
+                        Read more
+                      </Button>
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+              <hr />
+              <br />
+              <br />
+
+              <div className="article">
+                <Row>
+                  <Col className="ml-auto mr-auto" md="8">
+                    <Card className="card-blog card-plain text-center">
+                      <div className="card-image">
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img
+                            alt="..."
+                            className="img img-raised"
+                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                          />
+                        </a>
+                      </div>
+                      <CardBody>
+                        <div className="card-category">
+                          <Badge className="main-tag" color="info">
+                            Popular
+                          </Badge>
+                        </div>
+                        <a href="javascrip: void(0);">
+                          <CardTitle tag="h3">
+                          Is College the right time to start-up 
+                          </CardTitle>
+                          <h6 className="title-uppercase">October 27, 2018</h6>
+                        </a>
+                        <div className="card-description">
+                          <p>
+                          A 2-hour session was conducted by E - cell to motivate the college students to start their entrepreneurial journey in the college itself. On this occasion “Sourabh Yadav” the cofounder of “Basics Eduventures” addressed the students. He himself had started his journey while he was in college thus, he explained all the advantages of starting one’s entrepreneurial journey while studying in college itself. 
+                          </p>
+                        </div>
+                      </CardBody>
+                      <Button className="btn-round" color="danger" size="sm">
+                        Read more
+                      </Button>
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+              <hr />
+              <br />
+              <br />
+
+              <div className="article">
+                <Row>
+                  <Col className="ml-auto mr-auto" md="8">
+                    <Card className="card-blog card-plain text-center">
+                      <div className="card-image">
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img
+                            alt="..."
+                            className="img img-raised"
+                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                          />
+                        </a>
+                      </div>
+                      <CardBody>
+                        <div className="card-category">
+                          <Badge className="main-tag" color="info">
+                            Popular
+                          </Badge>
+                        </div>
+                        <a href="javascrip: void(0);">
+                          <CardTitle tag="h3">
+                          A session on Business Model 
+                          </CardTitle>
+                          <h6 className="title-uppercase">November 15, 2018</h6>
+                        </a>
+                        <div className="card-description">
+                          <p>
+                          A session on business model was organised by the E-cell. In this event Mr. Sparsh Sadafal, addressed the students. He started from the basics of business model, its meaning, a brief history and its importance. Later he explained the different business models of leading start-ups like Uber, Ola, Zomato etc, and they are earning a profit in spite of a lot of investment, their target audiences and the loyalty of the customers etc. 
+                          </p>
+                        </div>
+                      </CardBody>
+                      <Button className="btn-round" color="danger" size="sm">
+                        Read more
+                      </Button>
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+              <hr />
+              <br />
+              <br />
+
+              <div className="article">
+                <Row>
+                  <Col className="ml-auto mr-auto" md="8">
+                    <Card className="card-blog card-plain text-center">
+                      <div className="card-image">
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img
+                            alt="..."
+                            className="img img-raised"
+                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                          />
+                        </a>
+                      </div>
+                      <CardBody>
+                        <div className="card-category">
+                          <Badge className="main-tag" color="info">
+                            Popular
+                          </Badge>
+                        </div>
+                        <a href="javascrip: void(0);">
+                          <CardTitle tag="h3">
+                          A pitching workshop 
+                          </CardTitle>
+                          <h6 className="title-uppercase">November 29, 2018</h6>
+                        </a>
+                        <div className="card-description">
+                          <p>
+                          On this occasion Mr. Vikas Sharma, was invited to deliver an expert lecture on pitching. The motive of this workshop to educated the students about the concept of pitching, its process, its importance and how to get funded. He explained the students about the types of funding available in the market for the entrepreneurs, the benefits of being a bootstrapped company. He taught them the process of pitching the way, the language the points which one need to keep in mind while pitching to the investors. 
+                          </p>
+                        </div>
+                      </CardBody>
+                      <Button className="btn-round" color="danger" size="sm">
+                        Read more
+                      </Button>
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+              <hr />
+              <br />
+              <br />
+
+              <div className="article">
+                <Row>
+                  <Col className="ml-auto mr-auto" md="8">
+                    <Card className="card-blog card-plain text-center">
+                      <div className="card-image">
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img
+                            alt="..."
+                            className="img img-raised"
+                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                          />
+                        </a>
+                      </div>
+                      <CardBody>
+                        <div className="card-category">
+                          <Badge className="main-tag" color="info">
+                            Popular
+                          </Badge>
+                        </div>
+                        <a href="javascrip: void(0);">
+                          <CardTitle tag="h3">
+                          Motivational Talk Session 
+                          </CardTitle>
+                          <h6 className="title-uppercase">September 30, 2019</h6>
+                        </a>
+                        <div className="card-description">
+                          <p>
+                          A motivational talk session was organized by E-Cello of IET DAVV on 30th September,2019 . The main highlight of the session was about the title “Basics of Starting Business becoming entrepreneur” and was addressed by Mr. Punit Khandelwal, currently working as consultant with EY (Ernst & Young) which is a multinational professional services firm headquartered in London, England, United Kingdom. 
+                          </p>
+                        </div>
+                      </CardBody>
+                      <Button className="btn-round" color="danger" size="sm">
+                        Read more
+                      </Button>
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+              <hr />
+              <br />
+              <br />
               {/* <div className="article">
                 <Col className="ml-auto mr-auto" md="8">
                   <Card className="card-blog card-plain text-center">
