@@ -168,7 +168,7 @@ function BlogPosts() {
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                            src={require("assets/img/Events/sidhartrajhans.jpg")}
                           />
                         </a>
                       </div>
@@ -210,7 +210,7 @@ function BlogPosts() {
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                            src={require("assets/img/Events/govindnprakhar.jpg")}
                           />
                         </a>
                       </div>
@@ -252,7 +252,7 @@ function BlogPosts() {
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                            src={require("assets/img/Events/sourabhyadav.jpg")}
                           />
                         </a>
                       </div>
@@ -294,7 +294,7 @@ function BlogPosts() {
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                            src={require("assets/img/Events/sparshsadafal.jpg")}
                           />
                         </a>
                       </div>
@@ -336,7 +336,7 @@ function BlogPosts() {
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/Events/SunnyVaghela.jpg")}
+                            src={require("assets/img/Events/vikassharma.jpg")}
                           />
                         </a>
                       </div>
