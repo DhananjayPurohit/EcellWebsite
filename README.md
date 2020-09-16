@@ -1,11 +1,35 @@
 # Official Website of Ecell IETDAVV 
-https://ecellietdavv.co/
 
-Steps to run the project:
+<a href="https://ecellietdavv.co/"><img src="https://ecellietdavv.co/static/media/logo.fb165280.png" align="left" height="48" width="48" ></a>
 
-Make sure Node.js installed in your device.
-After cloning the repository, Run npm install to install all the dependencies needed.
-Run npm start to run project in development server.
+###Installation:
+>clone the repository!
+
+>Make sure that [Node.js LTS v](https://nodejs.org/) is installed on your device.
+
+
+Check if Node.js is installed!
+```bash
+$ node -v
+v12.18.3
+```
+
+
+Install the dependencies.
+
+```bash
+$ npm install
+```
+
+
+Start the server.
+
+```bash
+$ npm start
+```
+
+
+
 Open http://localhost:3000 to view it in the browser.
 
 The page will reload if you make edits.
