@@ -39,7 +39,4 @@ Even if your start-up fails, you are getting your degree from the college anyway
 
 So, now that you have seen the reasons, what are you waiting for? Think of an idea and start right away! Remember, even science says, “Static Friction is greater than Kinetic Friction.” So, it is always difficult to start but once you’re running, you have the dedication to overcome the obstacles that come your way.
 
-Thank You
-
-Saurabh Datta
 
