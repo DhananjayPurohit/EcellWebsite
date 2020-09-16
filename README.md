@@ -1,8 +1,12 @@
 # Official Website of Ecell IETDAVV 
-
+<br>
 <a href="https://ecellietdavv.co/"><img src="https://ecellietdavv.co/static/media/logo.fb165280.png" align="left" height="48" width="48" ></a>
+<br><br><br>
+
 
 ###Installation:
+
+
 >clone the repository!
 
 >Make sure that [Node.js LTS v](https://nodejs.org/) is installed on your device.
