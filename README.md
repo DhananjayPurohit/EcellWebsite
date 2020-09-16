@@ -4,12 +4,12 @@
 <br><br><br>
 
 
-###Installation:
+### Installation:
 
 
 >clone the repository!
 
->Make sure that [Node.js LTS v](https://nodejs.org/) is installed on your device.
+>Make sure that [Node.js](https://nodejs.org/) LTS version is installed on your device.
 
 
 Check if Node.js is installed!
