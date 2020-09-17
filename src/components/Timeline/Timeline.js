@@ -10,7 +10,21 @@ import {Container,
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import EventIcon from '@material-ui/icons/Event';
-import MicNoneIcon from '@material-ui/icons/MicNone';
+import MicIcon from '@material-ui/icons/Mic';
+import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
+import WatchLaterIcon from '@material-ui/icons/WatchLater';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
+import AssessmentIcon from '@material-ui/icons/Assessment';
+import AmpStoriesIcon from '@material-ui/icons/AmpStories';
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
+import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
+import AssignmentLateIcon from '@material-ui/icons/AssignmentLate';
+import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import MovieIcon from '@material-ui/icons/Movie';
+import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 
 function Timeline(){
     return(
@@ -83,7 +97,7 @@ function Timeline(){
     className="vertical-timeline-element--work"
     date="Feb 2020"
     iconStyle={{ background: '#f5593d', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<AssignmentTurnedInIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -127,7 +141,7 @@ function Timeline(){
     className="vertical-timeline-element--work"
     date="Dec 2019"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<WatchLaterIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -137,7 +151,7 @@ function Timeline(){
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/img/sections/hol.jpg")}
+                      src={require("assets/img/sections/gfs.jpg")}
                     />
                   </a>
                 </div>
@@ -171,7 +185,7 @@ function Timeline(){
     className="vertical-timeline-element--work"
     date="Nov 2019"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<MicIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -215,7 +229,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Oct 2019"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<EmojiObjectsIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -259,7 +273,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Sept 2019"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<AssessmentIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -269,7 +283,7 @@ function Timeline(){
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/img/sections/gfs.jpg")}
+                      src={require("assets/img/sections/hol.jpg")}
                     />
                   </a>
                 </div>
@@ -303,7 +317,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Sept 2019"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<AmpStoriesIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -345,9 +359,53 @@ function Timeline(){
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
+    date="Sept 2019"
+    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+    icon={<AssignmentTurnedInIcon />}
+  >
+    <Card className="card-blog" >
+        <Row>
+            <Col md="6" sm="12">
+                <div className="card-image" >
+                  <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <img
+                      alt="..."
+                      className="img"
+                      src={require("assets/img/sections/ESum.jpg")}
+                    />
+                  </a>
+                </div>
+                </Col>
+                <Col md="6" sm="12">
+                <CardBody className="text-center">
+                  <CardTitle tag="h4">
+                    NEC 2019 Finals
+                  </CardTitle>
+                  {/* <div className="card-description">
+                    Cards are an interaction model that are spreading pretty
+                    widely, in fact. What all of these have in common is that
+                    they're pulling...
+                  </div> */}
+                  <CardFooter>
+                    {/* <Button
+                      className="btn-round"
+                      color="danger"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      View Article
+                    </Button> */}
+                  </CardFooter>
+                </CardBody>
+                </Col>
+                </Row>
+              </Card>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--education"
     date="Jan 2019"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<QuestionAnswerIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -391,7 +449,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Jan 2019"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<MicIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -435,7 +493,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Nov 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<DoubleArrowIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -479,7 +537,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Nov 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<ImportantDevicesIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -523,7 +581,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Nov 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<MonetizationOnIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -567,7 +625,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Nov 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<QuestionAnswerIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -611,7 +669,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Oct 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<AssignmentLateIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -655,7 +713,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Oct 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<HourglassEmptyIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -699,7 +757,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Oct 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<EmojiObjectsIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -743,7 +801,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Oct 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<MovieIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -787,7 +845,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Oct 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<PeopleAltIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -831,7 +889,7 @@ function Timeline(){
     className="vertical-timeline-element--education"
     date="Oct 2018"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EventIcon />}
+    icon={<AmpStoriesIcon />}
   >
     <Card className="card-blog" >
         <Row>
@@ -849,7 +907,7 @@ function Timeline(){
                 <Col md="6" sm="12">
                 <CardBody className="text-center">
                   <CardTitle tag="h4">
-                    Freshmen entrepreneurship orientation Program
+                  Freshmen Orientation Program
                   </CardTitle>
                   {/* <div className="card-description">
                     Cards are an interaction model that are spreading pretty

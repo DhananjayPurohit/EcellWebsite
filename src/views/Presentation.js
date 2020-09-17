@@ -13,6 +13,7 @@ import FooterAboutUs from "components/Footers/FooterAboutUs.js";
 import Timeline from "components/Timeline/Timeline.js";
 import GifLoader from 'react-gif-loader';
 import loader from "../assets/img/loader.gif";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 function Presentation(props) {
   document.documentElement.classList.remove("nav-open");
@@ -37,6 +38,7 @@ function Presentation(props) {
   };
 
   const [load, setLoad] = useState(0);
+  const matches = useMediaQuery('(min-width:600px)');
 
   React.useEffect(() => {
     
@@ -70,7 +72,7 @@ setTimeout(function()
     <GifLoader
     loading={true}
     imageSrc={loader}
-    imageStyle={{ marginTop:"10%"}}
+    imageStyle={{ marginTop:"10%",marginLeft: (matches)?"0px":"-30%"}}
     overlayBackground="rgb(230,232,234)"
     />
     </div>
