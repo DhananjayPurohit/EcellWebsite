@@ -1,43 +1,51 @@
 import React from "react";
-import {Container, 
-    Row, 
-    Col,
-    Button, 
-    Card,
-    CardBody,
-    CardFooter,
-    CardTitle} from "reactstrap";
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import EventIcon from '@material-ui/icons/Event';
-import MicIcon from '@material-ui/icons/Mic';
-import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
-import WatchLaterIcon from '@material-ui/icons/WatchLater';
-import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
-import AssessmentIcon from '@material-ui/icons/Assessment';
-import AmpStoriesIcon from '@material-ui/icons/AmpStories';
-import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
-import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
-import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
-import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
-import AssignmentLateIcon from '@material-ui/icons/AssignmentLate';
-import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
-import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
-import MovieIcon from '@material-ui/icons/Movie';
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardTitle,
+} from "reactstrap";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import EventIcon from "@material-ui/icons/Event";
+import MicIcon from "@material-ui/icons/Mic";
+import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
+import WatchLaterIcon from "@material-ui/icons/WatchLater";
+import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
+import AssessmentIcon from "@material-ui/icons/Assessment";
+import AmpStoriesIcon from "@material-ui/icons/AmpStories";
+import QuestionAnswerIcon from "@material-ui/icons/QuestionAnswer";
+import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
+import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
+import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
+import AssignmentLateIcon from "@material-ui/icons/AssignmentLate";
+import HourglassEmptyIcon from "@material-ui/icons/HourglassEmpty";
+import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
+import MovieIcon from "@material-ui/icons/Movie";
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
 
-function Timeline(){
-    return(
-        <>
-        <div className="section-gray"
+import TimelineCard from "./TimelineCard";
+
+function Timeline() {
+  return (
+    <>
+      <div
+        className="section-gray"
         // style={{backgroundImage: `url(${require('../../assets/img/sections/bg.jpg')})`,
         // backgroundRepeat: "no-repeat", backgroundSize:"100%",
         // }}
-        >
+      >
         <Container fluid>
-        <Row>
+          <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
-              <h2 className="title" >Our Activities</h2>
+              <h2 className="title">Our Activities</h2>
               {/* <h5 className="description">
                 The UI Kits, Templates and Dashboards that we've created are
                 used by <b>790,000+ web developers</b> in over{" "}
@@ -46,894 +54,171 @@ function Timeline(){
             </Col>
           </Row>
           <Row>
-        <VerticalTimeline>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    // contentStyle={{ color: '#fff' }}
-    // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="Coming Soon"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<EventIcon/>}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image">
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/alumnus.png")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Convoke with Alumnus
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="Feb 2020"
-    iconStyle={{ background: '#f5593d', color: '#fff' }}
-    icon={<AssignmentTurnedInIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/NEC2020.jpeg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    NEC 2020 Finals
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="Dec 2019"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WatchLaterIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/gfs.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Hour of Learning
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="Nov 2019"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<MicIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/gd.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Group Discussion
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Oct 2019"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EmojiObjectsIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/loe.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    A session on life of an entrepreneur
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Sept 2019"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<AssessmentIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/hol.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Government funding schemes for entrepreneurs
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Sept 2019"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<AmpStoriesIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/rs.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Freshman Orientation by Raj Shamani
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Sept 2019"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<AssignmentTurnedInIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/ESum.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    NEC 2019 Finals
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Jan 2019"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<QuestionAnswerIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/d2c.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Dare2compete quiz 
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Jan 2019"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<MicIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/debate.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Debate
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Nov 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<DoubleArrowIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/pw.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    A pitching workshop
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Nov 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<ImportantDevicesIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/d2ch.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Dare2compete Hackathon
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Nov 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<MonetizationOnIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/bm.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    A session on Business Model
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Nov 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<QuestionAnswerIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/quiz.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Quiz
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Oct 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<AssignmentLateIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/csc.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Case study Competition
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Oct 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<HourglassEmptyIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/crt.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Is College the right time to start-up
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Oct 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<EmojiObjectsIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/sloe.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    A session on the life of an entrepreneur
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Oct 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<MovieIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/ms.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Movie Screening
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Oct 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<PeopleAltIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/gdp.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                    Group Discussion
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="Oct 2018"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<AmpStoriesIcon />}
-  >
-    <Card className="card-blog" >
-        <Row>
-            <Col md="6" sm="12">
-                <div className="card-image" >
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require("assets/img/sections/feop.jpg")}
-                    />
-                  </a>
-                </div>
-                </Col>
-                <Col md="6" sm="12">
-                <CardBody className="text-center">
-                  <CardTitle tag="h4">
-                  Freshmen Orientation Program
-                  </CardTitle>
-                  {/* <div className="card-description">
-                    Cards are an interaction model that are spreading pretty
-                    widely, in fact. What all of these have in common is that
-                    they're pulling...
-                  </div> */}
-                  <CardFooter>
-                    {/* <Button
-                      className="btn-round"
-                      color="danger"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      View Article
-                    </Button> */}
-                  </CardFooter>
-                </CardBody>
-                </Col>
-                </Row>
-              </Card>
-  </VerticalTimelineElement>
-</VerticalTimeline>
-</Row>
-</Container>
-</div>
-  </>
-    );
+            <VerticalTimeline>
+              <TimelineCard
+                date="Coming Soon"
+                icon={<EventIcon />}
+                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                title="Convoke with Alumnus"
+                src={require("assets/img/sections/alumnus.png")}
+              />
+
+              <TimelineCard
+                date="Feb 2020"
+                icon={<AssignmentTurnedInIcon />}
+                iconStyle={{ background: "#f5593d", color: "#fff" }}
+                title="NEC 2020 Finals"
+                src={require("assets/img/sections/NEC2020.jpeg")}
+              />
+
+              <TimelineCard
+                date="Dec 2019"
+                icon={<WatchLaterIcon />}
+                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                title="Hour of Learning"
+                src={require("assets/img/sections/gfs.jpg")}
+              />
+
+              <TimelineCard
+                date="Nov 2019"
+                icon={<MicIcon />}
+                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                title="Group Discussion"
+                src={require("assets/img/sections/gd.jpg")}
+              />
+
+              <TimelineCard
+                date="Oct 2019"
+                icon={<EmojiObjectsIcon />}
+                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                title="A session on life of an entrepreneur"
+                src={require("assets/img/sections/loe.jpg")}
+              />
+
+              <TimelineCard
+                date="Sept 2019"
+                icon={<AssessmentIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Government funding schemes for entrepreneurs"
+                src={require("assets/img/sections/hol.jpg")}
+              />
+
+              <TimelineCard
+                date="Sept 2019"
+                icon={<AmpStoriesIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Freshman Orientation by Raj Shamani"
+                src={require("assets/img/sections/rs.jpg")}
+              />
+
+              <TimelineCard
+                date="Sept 2019"
+                icon={<AssignmentTurnedInIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="NEC 2019 Finals"
+                src={require("assets/img/sections/ESum.jpg")}
+              />
+
+              <TimelineCard
+                date="Jan 2019"
+                icon={<QuestionAnswerIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Dare2compete quiz"
+                src={require("assets/img/sections/d2c.jpg")}
+              />
+
+              <TimelineCard
+                date="Jan 2019"
+                icon={<MicIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Debate"
+                src={require("assets/img/sections/debate.jpg")}
+              />
+
+              <TimelineCard
+                date="Nov 2018"
+                icon={<DoubleArrowIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="A pitching workshop"
+                src={require("assets/img/sections/pw.jpg")}
+              />
+
+              <TimelineCard
+                date="Nov 2018"
+                icon={<ImportantDevicesIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Dare2compete Hackathon"
+                src={require("assets/img/sections/d2ch.jpg")}
+              />
+
+              <TimelineCard
+                date="Nov 2018"
+                icon={<MonetizationOnIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="A session on Business Model"
+                src={require("assets/img/sections/bm.jpg")}
+              />
+
+              <TimelineCard
+                date="Nov 2018"
+                icon={<QuestionAnswerIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Quiz"
+                src={require("assets/img/sections/quiz.jpg")}
+              />
+
+              <TimelineCard
+                date="Oct 2018"
+                icon={<AssignmentLateIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Case study Competition"
+                src={require("assets/img/sections/csc.jpg")}
+              />
+
+              <TimelineCard
+                date="Oct 2018"
+                icon={<HourglassEmptyIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Is College the right time to start-up"
+                src={require("assets/img/sections/crt.jpg")}
+              />
+
+              <TimelineCard
+                date="Oct 2018"
+                icon={<EmojiObjectsIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="A session on the life of an entrepreneur"
+                src={require("assets/img/sections/sloe.jpg")}
+              />
+
+              <TimelineCard
+                date="Oct 2018"
+                icon={<MovieIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Movie Screening"
+                src={require("assets/img/sections/ms.jpg")}
+              />
+
+              <TimelineCard
+                date="Oct 2018"
+                icon={<PeopleAltIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Group Discussion"
+                src={require("assets/img/sections/gdp.jpg")}
+              />
+
+              <TimelineCard
+                date="Oct 2018"
+                icon={<AmpStoriesIcon />}
+                iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+                title="Freshmen Orientation Program"
+                src={require("assets/img/sections/feop.jpg")}
+              />
+            </VerticalTimeline>
+          </Row>
+        </Container>
+      </div>
+    </>
+  );
 }
 export default Timeline;
